@@ -3,6 +3,7 @@ L'architecture des ordinateurs est une base essentielle pour comprendre le fonct
 
                     ##### Les mémoires ########
   ------Introduction-----
+  
 Définition , Caractéristiques des mémoires 
 La mémoire centrale 
 Caractéristiques d’une mémoire centrale
@@ -10,6 +11,7 @@ Caractéristiques d’une mémoire centrale
 	•Conception d’une mémoire centrale 
 	• Architecture d’une Mémoire centrale ( architecture modulaire et architecture entrelacée ).
  ———————Objectifs———————
+
 Comprendre c’est quoi une mémoire
 Comprendre le rôle et la structure d’une mémoire centrale.
 Apprendre à concevoir une mémoire centrale ( modulaire et entrelacée ).
