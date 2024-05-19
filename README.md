@@ -24,7 +24,7 @@ L’architecture de Von Neumann (Cette architecture est la base des architecture
   D’une mémoire centrale<br/>
   D’une unité centrale  (UC) ou CPU (Central Processing Unit), processeur.<br/>
 
-<img width="535" alt="Screenshot 2024-05-19 at 5 42 07 PM" src="https://github.com/amineelhassak/architecture-des-ordinateurs/assets/123774795/751e52e6-7815-4f02-ba9e-621b6ae409c3">
+<img width="535" alt="Screenshot 2024-05-19 at 5 42 07 PM" src="https://github.com/amineelhassak/architecture-des-ordinateurs/assets/123774795/751e52e6-7815-4f02-ba9e-621b6ae409c3"><br/>
 Unite central(processeur):<br/>
 	à pour rôle d’exécuter les programmes.<br/>
 	Pour pouvoir effectuer les  opérations sur des données et exécuter des programmes, l’UC doit  disposer d’un espace de travail . Cet espace de travail s’appelel la mémoire centrale<br/>
@@ -37,7 +37,8 @@ C’est quoi une mémoire ? <br/>
 1. La capacité d’une mémoire
 	•La capacité ( taille ) d’une mémoire est le nombre (quantité) d’informations qu’on peut enregistrer ( mémoriser ) dans cette mémoire.<br/>
  Bit(0,1) ---> 1 Octet = 8 bits  –—— >  1 (KO )= 1024 octets —> 1 ( MO) = 1024 KO ——> 1 ( GO)=1024 MO —> 1 (To) = 1024 GO <br/>
-<h1>Comparaison de la Mémoire Volatile et Non-Volatile</h1>
+ 
+<h3>la Mémoire Volatile et Non-Volatile</h3>
     <table>
         <thead>
             <tr>
