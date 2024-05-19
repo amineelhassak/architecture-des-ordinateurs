@@ -23,17 +23,17 @@ Avec une bascule c’est possible de mémoriser une information sur 1 seul bit.<
 Avec un registre de n bascules c’est possible de mémoriser une information sur n bits.<br/>
 Si on veut mémoriser une information de taille importante —> il faut utiliser une mémoire.<br/>
 ### Architecture matérielle d’une machine (architecture de Von Neumann )###
-L’architecture de Von Neumann (Cette architecture est la base des architectures des ordinateurs) est composée :
-D’une mémoire centrale
-D’une unité centrale (UC) ou CPU (Central Processing Unit), processeur.
+L’architecture de Von Neumann (Cette architecture est la base des architectures des ordinateurs) est composée :<br/>
+D’une mémoire centrale<br/>
+D’une unité centrale (UC) ou CPU (Central Processing Unit), processeur.<br/>
 
 <img width="535" alt="Screenshot 2024-05-19 at 5 42 07 PM" src="https://github.com/amineelhassak/architecture-des-ordinateurs/assets/123774795/751e52e6-7815-4f02-ba9e-621b6ae409c3"><br/>
-Unité centrale (processeur):
-à pour rôle d’exécuter les programmes.
-Pour pouvoir effectuer les opérations sur des données et exécuter des programmes, l’UC doit disposer d’un espace de travail. Cet espace de travail s’appelle la mémoire centrale.
+Unité centrale (processeur):<br/>
+à pour rôle d’exécuter les programmes.<br/>
+Pour pouvoir effectuer les opérations sur des données et exécuter des programmes, l’UC doit disposer d’un espace de travail. Cet espace de travail s’appelle la mémoire centrale.<br/>
 
 C’est quoi une mémoire ?<br/>
-Une mémoire est un dispositif capable de :
+Une mémoire est un dispositif capable de :<br/>
 - Enregistrer une information,
 - Conserver (mémoriser),
 - et de la restituer (possible de la lire ou la récupérer par la suite).
