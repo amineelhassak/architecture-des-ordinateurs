@@ -7,7 +7,7 @@ L'architecture des ordinateurs est une base essentielle pour comprendre le fonct
 ------Introduction-----<br/>
 Définition<br/>
 Caractéristiques des mémoires<br/>
-La mémoire centrale
+La mémoire centrale<br/>
 Caractéristiques d’une mémoire centrale
 -   Structure d’une mémoire centrale
 -   Conception d’une mémoire centrale
