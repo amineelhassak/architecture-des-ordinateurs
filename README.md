@@ -4,7 +4,7 @@ L'architecture des ordinateurs est une base essentielle pour comprendre le fonct
 
 ##### Les mémoires #####
 
-------Introduction-----
+------Introduction-----<br/>
 Définition, Caractéristiques des mémoires
 La mémoire centrale
 Caractéristiques d’une mémoire centrale
@@ -12,12 +12,12 @@ Caractéristiques d’une mémoire centrale
 - Conception d’une mémoire centrale
 - Architecture d’une Mémoire centrale (architecture modulaire et architecture entrelacée).
 
-———————Objectifs———————
+———————Objectifs———————<br/>
 Comprendre c’est quoi une mémoire
 Comprendre le rôle et la structure d’une mémoire centrale.
 Apprendre à concevoir une mémoire centrale (modulaire et entrelacée).
 
-Introduction ::: 
+Introduction ::: <br/>
 Avec une bascule c’est possible de mémoriser une information sur 1 seul bit.
 Avec un registre de n bascules c’est possible de mémoriser une information sur n bits.
 Si on veut mémoriser une information de taille importante —> il faut utiliser une mémoire.
@@ -32,17 +32,17 @@ Unité centrale (processeur):
 à pour rôle d’exécuter les programmes.
 Pour pouvoir effectuer les opérations sur des données et exécuter des programmes, l’UC doit disposer d’un espace de travail. Cet espace de travail s’appelle la mémoire centrale.
 
-C’est quoi une mémoire ?
+C’est quoi une mémoire ?<br/>
 Une mémoire est un dispositif capable de :
 - Enregistrer une information,
 - Conserver (mémoriser),
 - et de la restituer (possible de la lire ou la récupérer par la suite).
 
 ####### Caractéristiques des mémoires #######
-1. La capacité d’une mémoire
+1. La capacité d’une mémoire<br/>
 La capacité (taille) d’une mémoire est le nombre (quantité) d’informations qu’on peut enregistrer (mémoriser) dans cette mémoire.
 Bit(0,1) ---> 1 Octet = 8 bits —> 1 (KO) = 1024 octets —> 1 (MO) = 1024 KO —> 1 (GO) = 1024 MO —> 1 (To) = 1024 GO
-
+2. La volatilite
 ### La Mémoire Volatile et Non-Volatile ###
 | Caractéristique                        | Mémoire Volatile               | Mémoire Non-Volatile                      |
 |----------------------------------------|-------------------------------|-------------------------------------------|
