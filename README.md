@@ -61,7 +61,7 @@ Sur une mémoire on peut effectuer l’opération de :
 Il existe des mémoires qui offrent les deux modes lecteur/écriture, ces mémoires s’appellent mémoires vives.
 Il existe des mémoires qui offrent uniquement la possibilité de la lecture (c’est pas possible de modifier le contenu). Ces mémoires s’appellent mémoires mortes.
 
-4. Classification des mémoires
+##### Classification des mémoires #######<br/>
 Les mémoires peuvent être classées en trois catégories selon la technologie utilisée :
 - Mémoire à semi-conducteur (mémoire centrale, ROM, PROM, …) : très rapide mais de taille réduite.
 - Mémoire magnétique (disque dur, disquette,…) : moins rapide mais stocke un volume d’informations très grand.
