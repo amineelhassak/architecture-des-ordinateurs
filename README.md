@@ -19,10 +19,9 @@ Comprendre le rôle et la structure d’une mémoire centrale.<br/>
 Apprendre à concevoir une mémoire centrale (modulaire et entrelacée).<br/>
 
 Introduction ::: <br/>
-Avec une bascule c’est possible de mémoriser une information sur 1 seul bit.
-Avec un registre de n bascules c’est possible de mémoriser une information sur n bits.
-Si on veut mémoriser une information de taille importante —> il faut utiliser une mémoire.
-
+Avec une bascule c’est possible de mémoriser une information sur 1 seul bit.<br/>
+Avec un registre de n bascules c’est possible de mémoriser une information sur n bits.<br/>
+Si on veut mémoriser une information de taille importante —> il faut utiliser une mémoire.<br/>
 ### Architecture matérielle d’une machine (architecture de Von Neumann )###
 L’architecture de Von Neumann (Cette architecture est la base des architectures des ordinateurs) est composée :
 D’une mémoire centrale
