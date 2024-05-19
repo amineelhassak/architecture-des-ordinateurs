@@ -14,9 +14,9 @@ Caractéristiques d’une mémoire centrale
 -   Architecture d’une Mémoire centrale (architecture modulaire et architecture entrelacée).
 
 ———————Objectifs———————<br/>
-Comprendre c’est quoi une mémoire
-Comprendre le rôle et la structure d’une mémoire centrale.
-Apprendre à concevoir une mémoire centrale (modulaire et entrelacée).
+Comprendre c’est quoi une mémoire<br/>
+Comprendre le rôle et la structure d’une mémoire centrale.<br/>
+Apprendre à concevoir une mémoire centrale (modulaire et entrelacée).<br/>
 
 Introduction ::: <br/>
 Avec une bascule c’est possible de mémoriser une information sur 1 seul bit.
