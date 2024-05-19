@@ -25,19 +25,18 @@ L’architecture de Von Neumann (Cette architecture est la base des architecture
   D’une unité centrale  (UC) ou CPU (Central Processing Unit), processeur.<br/>
 
 <img width="535" alt="Screenshot 2024-05-19 at 5 42 07 PM" src="https://github.com/amineelhassak/architecture-des-ordinateurs/assets/123774795/751e52e6-7815-4f02-ba9e-621b6ae409c3">
-Unite central(processeur):
-	à pour rôle d’exécuter les programmes. 
-	Pour pouvoir effectuer les  opérations sur des données et exécuter des programmes, l’UC doit  disposer d’un espace de travail . Cet espace de travail s’appelel la mémoire centrale
-C’est quoi une mémoire ? 
-•Une mémoire est un dispositif capable : 
-–D'enregistrer une information, 
-–De la conserver  ( mémoriser )
-–et de la restituer ( possible de la lire ou la récupérer par la suite).
-Caractéristiques des mémoires 
-1. La capacité d’une mémoire 
-	•La capacité ( taille ) d’une mémoire est le nombre (quantité) d’informations qu’on peut enregistrer ( mémoriser ) dans cette mémoire.
-	– Bit  : un bit est l’élément de base pour la représentation de l’information .
-1 Octet = 8 bits  –—— >  1 (KO )= 1024 octets —> 1 ( MO) = 1024 KO ——> 1 ( GO)=1024 MO —> 1 (To) = 1024 GO
+Unite central(processeur):<br/>
+	à pour rôle d’exécuter les programmes.<br/>
+	Pour pouvoir effectuer les  opérations sur des données et exécuter des programmes, l’UC doit  disposer d’un espace de travail . Cet espace de travail s’appelel la mémoire centrale<br/>
+C’est quoi une mémoire ? <br/>
+•Une mémoire est un dispositif capable : <br/>
+–D'enregistrer une information, <br/>
+–De la conserver  ( mémoriser )<br/>
+–et de la restituer ( possible de la lire ou la récupérer par la suite).<br/>
+	####### Caractéristiques des mémoires #### <br/>
+1. La capacité d’une mémoire
+	•La capacité ( taille ) d’une mémoire est le nombre (quantité) d’informations qu’on peut enregistrer ( mémoriser ) dans cette mémoire.<br/>
+ Bit(0,1) ---> 1 Octet = 8 bits  –—— >  1 (KO )= 1024 octets —> 1 ( MO) = 1024 KO ——> 1 ( GO)=1024 MO —> 1 (To) = 1024 GO <br/>
 <h1>Comparaison de la Mémoire Volatile et Non-Volatile</h1>
     <table>
         <thead>
