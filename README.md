@@ -69,4 +69,5 @@ C’est quoi une mémoire ? <br/>
                 <td>Stockage à long terme, firmware, sauvegardes</td>
             </tr>
         </tbody>
-    </table>
+    </table><br/>
+En résumé, la volatilité de la mémoire est une caractéristique importante qui détermine si la mémoire peut retenir les données sans alimentation électrique. La mémoire volatile est essentielle pour les opérations rapides et temporaires, tandis que la mémoire non-volatile est cruciale pour le stockage permanent et la conservation des données à long terme.
