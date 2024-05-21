@@ -171,4 +171,48 @@ Pour connaître le nombre de boîtiers nécessaires, il faut calculer les deux f
 - L’adresse est divisée en deux parties :
   - Les bits de poids forts pour sélectionner un module. Si le nombre de modules est égal à n, alors il faut prendre k bits tel que 2^k >= n.
   - Les bits de poids faibles pour sélectionner un mot dans un module.
-"""
+"""### Mémoire entrelacée
+
+Avec une MC modulaire, il est possible qu’un processeur monopolise un module (par exemple, il accède à des adresses consécutives). Pour éviter ce problème :
+- Un module est divisé en plusieurs blocs.
+- Les adresses consécutives sont placées dans des blocs différents.
+- Le nombre de blocs représente le degré d’entrelacement.
+
+### Sélectionner un mot dans une MC entrelacée
+
+L’adresse est divisée en deux parties :
+- Les bits de poids faibles pour sélectionner le bloc. Si on dispose de n blocs, il faut prendre k bits tel que 2^k >= n.
+- Les bits de poids forts pour sélectionner le mot dans le bloc.
+
+#### Exemple
+
+Réaliser une mémoire de capacité 512 mots de 8 bits avec des boîtiers de 128 mots de 8 bits avec un degré d’entrelacement de 4.
+- Capacité : 512 = 2^9 (taille de bus d’adresses = 9)
+- Taille d’un mot : 8 bits (taille du bus de données = 8)
+- 4 blocs : taille d’un bloc = 512 / 4 = 128
+- Taille d’un boîtier = 128 : un boîtier par bloc est suffisant
+- 2 bits de poids faibles pour la sélection d’un bloc (A1-0)
+- Les bits de poids forts (A8-2) pour sélectionner un mot dans un bloc
+
+### Mémoires modulaires entrelacées
+
+La MC est divisée en plusieurs modules. Chaque module est divisé en n blocs (n étant le degré d’entrelacement). Pour sélectionner un mot :
+1. Sélectionner le module (bits de poids forts)
+2. Sélectionner le bloc dans le module (bits de poids faibles)
+3. Sélectionner le mot dans le bloc (les bits restants)
+
+#### Exemple
+
+Réaliser une mémoire de 64 mots de 8 bits organisée en deux modules entrelacés, l’entrelacement se fait à l’intérieur (D=2), en utilisant des circuits (boîtiers) de 16 mots de 8 bits.
+
+- Taille du bus d’adresses k = 6 (64 = 2^6) : A5-0
+- Nombre de modules m = 2 : la taille d’un module est de 32 mots
+- Nombre de bits pour sélectionner un module = 1 (A5)
+- Nombre de blocs dans un module D = 2 : le nombre de bits nécessaire pour sélectionner un bloc = 1 (A0)
+- Taille d’un bloc = 16 mots : un circuit suffit pour réaliser un bloc
+- Nombre de bits nécessaire pour sélectionner un mot dans le bloc = 4 (A4-1)
+
+
+
+
+
