@@ -72,92 +72,106 @@ RAM : Random Acces memory
 Mémoire à accès aléatoire 
 
 
-. C’est quoi une mémoire centrale ? 
-	La mémoire centrale (MC) représente l’espace de travail de l’ordinateur 
-	Dans une machine (ordinateur / calculateur) pour exécuter un programme il faut le charger ( copier ) 	  		dans la mémoire centrale 
-	•Le temps d’accès à la mémoire centrale et sa capacité sont deux éléments qui influent sur le temps 			d’exécution d’un programme  ( performance d’une machine ).
-	Caractéristiques de la mémoire centrale 
-•La  mémoire centrale est réalisé a base de semi-conducteurs.
-•La mémoire centrale est une mémoire vive : accès en lecture et écriture.
-•La mémoire centrale est dite à accès aléatoire (RAM : Random Acces Memory) c'est-à-dire que le temps d'accès à l'information est indépendant de sa place en mémoire. 
-•La mémoire centrale est volatile : la conservation de son contenu nécessite la permanence de son alimentation électrique. 
-•Un temps d’accès à une mémoire centrale est moyen mais plus rapide que les mémoires magnétiques .
-•La capacité d’une mémoire centrale est limitée mais il y a toujours une possibilité d’une extension. 
-•Pour la communication avec les autres organes de l’ordinateur, la mémoire centrale utilise les bus ( bus d’adresses et bus de données)
-	Types des mémoires centrales 
-•Il existent  deux grandes familles des mémoires centrales : les mémoires statiques (SRAM) et les mémoires dynamiques (DRAM). 
-.Vue logique de la mémoire centrale 
-•La mémoire centrale peut être vue comme un large vecteur ( tableau ) de mots ou octets.
-•Un mot mémoire stocke une information sur n bits.
-• un mot mémoire contient plusieurs cellules mémoire.
-•Une cellule mémoire stocke1 seul bit .
-•Chaque mot possède sa propre adresse.
-•Une adresse est un numéro unique qui permet d’accéder à un mot mémoire.
-•Les adresses sont séquentielles ( consécutives )
 
-•La taille de l’adresse ( le nombre de bits ) dépend de la capacité de la mémoire.
+readme_content = """
+# README - Architecture des Ordinateurs
 
-<img width="307" alt="Screenshot 2024-05-19 at 7 53 56 PM" src="https://github.com/amineelhassak/architecture-des-ordinateurs/assets/123774795/10039178-d189-4029-a89b-c82813af4e12">
-5. Structure physique d’une mémoire centrale :
+## C'est quoi une mémoire centrale ?
 
-•RAM (Registre d’Adresse Mémoire ) : ce registre stocke l’adresse du mot à lire ou a écrire .
-•RIM ( Registre d’Information mémoire ) : stocke l’information lue à partir de la mémoire ou l’information à écrire dans la mémoire.
-•Décodeur : permet de sélectionner un mot mémoire.
-•R/W : commande de lecture/écriture  , cette commande permet de lire ou d’écrire dans la mémoire ( si R/W=1 alors lecture sinon écriture )
-•Bus d’adresses de taille k bits
-•Bus de données  de taille n  bits 
-￼
+La mémoire centrale (MC) représente l’espace de travail de l’ordinateur. Pour exécuter un programme sur une machine (ordinateur/calculateur), il faut le charger (copier) dans la mémoire centrale. Le temps d’accès à la mémoire centrale et sa capacité sont deux éléments qui influent sur le temps d’exécution d’un programme, impactant ainsi la performance de la machine.
 
+### Caractéristiques de la mémoire centrale
 
-•Soit  k la taille du bus d’adresses ( taille du registre RAM)
-•Soit n la taille du bus de données ( taille du registre RIM ou la taille d’un mot mémoire )
-•On peut exprimer la capacité de la mémoire centrale soit en nombre de mots mémoire ou en bits ( octets, kilo-octets,….)
-–  La capacité = 2k         Mots mémoire 
-–  La capacité = 2k  *  n  Bits 
-Exemple : 
-Dans une mémoire la taille du bus d’adresses K=14 et la taille du bus de données n=4.  Calculer  la capacité de cette mémoire ?
+- **Semi-conducteurs**: La mémoire centrale est réalisée à base de semi-conducteurs.
+- **Mémoire vive**: La mémoire centrale est une mémoire vive, permettant l'accès en lecture et en écriture.
+- **Accès aléatoire (RAM)**: La mémoire centrale est dite à accès aléatoire (RAM : Random Access Memory), ce qui signifie que le temps d'accès à l'information est indépendant de sa place en mémoire.
+- **Volatile**: La mémoire centrale est volatile; la conservation de son contenu nécessite une alimentation électrique permanente.
+- **Temps d’accès**: Le temps d’accès à la mémoire centrale est moyen mais plus rapide que les mémoires magnétiques.
+- **Capacité limitée**: La capacité d’une mémoire centrale est limitée, mais il est toujours possible de l’étendre.
+- **Communication**: Pour la communication avec les autres organes de l’ordinateur, la mémoire centrale utilise les bus (bus d’adresses et bus de données).
 
-C=214 = 16384 Mots de 4 bits 
-C= 214  * 4 = 65536 Bits =  8192 Octets  = 8 Ko
-		Comment lire une information ? 
-•Pour lire une information en mémoire centrale il faut effectuer les opérations suivantes:
-–Charger dans le registre RAM l’adresse du mot à lire.
-–Lancer la commande de lecture ( R/W=1)
-–L’information est disponible dans le registre RIM au bout d’un certain temps ( temps d’accès) 
-		Comment écrire une information ?
-•Pour écrire une information en MC il faut effectuer les opérations suivantes:
-–Charger dans le RAM l’adresse du mot ou se fera l’écriture.
-–Placer dans le RIM l’information à écrire.
-–Lancer la commande d’écriture pour transférer le contenu du RIM dans la mémoire .
+### Types de mémoires centrales
 
-			Structure d’un boîtier :
+Il existe deux grandes familles de mémoires centrales : les mémoires statiques (SRAM) et les mémoires dynamiques (DRAM).
 
+### Vue logique de la mémoire centrale
 
-Un boîtier possède la même structure qu’une mémoire ( RAM,RIM,….) 
-en plus de la commande CS 
-CS=0 le boîtier est sélectionné
-CS=1 le boîtier n’est pas sélectionné
+- La mémoire centrale peut être vue comme un large vecteur (tableau) de mots ou octets.
+- Un mot mémoire stocke une information sur n bits.
+- Un mot mémoire contient plusieurs cellules mémoire.
+- Une cellule mémoire stocke 1 seul bit.
+- Chaque mot possède sa propre adresse.
+- Une adresse est un numéro unique qui permet d’accéder à un mot mémoire.
+- Les adresses sont séquentielles (consécutives).
+- La taille de l’adresse (le nombre de bits) dépend de la capacité de la mémoire.
 
-Comment calcul le nombre de boitier :
-•Soit M une mémoire de capacité C , tel que m est le nombre de mot et n la taille d’un mot.
-•Soit M’ un boîtier de capacité C’ , tel que m’ le nombre de mot et n’ la taille d’un mot.
-•Avec C > C’  ( m >= m’ , n >=n’)
-•Quel est le nombre de boîtiers M’ nécessaire pour réaliser la mémoire  M ?
-•Pour connaître le nombre de boîtiers nécessaire , il faut calculer les deux facteurs suivants :
-–P =m/m’
-–Q=n/n’
-•P : permet de déterminer de nombre de boîtiers M’ nécessaire pour obtenir le nombre de mots de la mémoire M ( extension lignes ).
-•Q : permet de déterminer le nombre de boîtiers M’ nécessaire pour obtenir la taille de mot de la mémoire M ( extension mots ou extension colonnes).
-•P.Q donne le nombre totale de boîtiers nécessaire pour réaliser la mémoire M 
-•Pour sélectionner  les boîtiers on utilise les bits de poids forts d’adresses. Si  P est le facteur d’extension lignes alors on prend k bits tel que P=2k.
-•Les autres bits d’adresses restants sont utilisés pour sélectionner un mot dans un boîtier.
-7.1 Mémoire modulaire 
-•La solution est de découper la mémoire en plusieurs modules.
-•Plusieurs bus permettent d’accéder simultanément (en même temps) à la MC.
-•Possible d’avoir autant d’accès que de modules.
-•On ne peut pas accéder simultanément à un module.
-Comment sélectionner un mot dans une architecture modulaire ? 
-•L’adresse est divisée en deux parties :
-–Les bits de poids forts pour sélectionner un  module. Si le nombre de module est égal à n , alors il faut prendre k bits tel que 2k >= n 
-–Les bits de poids faibles pour sélectionner un mot dans un module.
+### Structure physique d’une mémoire centrale
 
+- **RAM (Registre d’Adresse Mémoire)**: Ce registre stocke l’adresse du mot à lire ou à écrire.
+- **RIM (Registre d’Information Mémoire)**: Stocke l’information lue à partir de la mémoire ou l’information à écrire dans la mémoire.
+- **Décodeur**: Permet de sélectionner un mot mémoire.
+- **R/W**: Commande de lecture/écriture. Cette commande permet de lire ou d’écrire dans la mémoire (si R/W=1 alors lecture sinon écriture).
+- **Bus d’adresses**: Taille k bits.
+- **Bus de données**: Taille n bits.
+
+### Capacité de la mémoire centrale
+
+- Soit k la taille du bus d’adresses (taille du registre RAM).
+- Soit n la taille du bus de données (taille du registre RIM ou la taille d’un mot mémoire).
+- On peut exprimer la capacité de la mémoire centrale soit en nombre de mots mémoire soit en bits (octets, kilo-octets, etc.).
+
+Exemple :
+- Dans une mémoire, si la taille du bus d’adresses k=14 et la taille du bus de données n=4, la capacité de cette mémoire est :
+  - C = 2^14 = 16384 Mots de 4 bits
+  - C = 2^14 * 4 = 65536 Bits = 8192 Octets = 8 Ko
+
+### Comment lire une information ?
+
+Pour lire une information en mémoire centrale, il faut effectuer les opérations suivantes :
+1. Charger dans le registre RAM l’adresse du mot à lire.
+2. Lancer la commande de lecture (R/W=1).
+3. L’information est disponible dans le registre RIM au bout d’un certain temps (temps d’accès).
+
+### Comment écrire une information ?
+
+Pour écrire une information en MC, il faut effectuer les opérations suivantes :
+1. Charger dans le RAM l’adresse du mot où se fera l’écriture.
+2. Placer dans le RIM l’information à écrire.
+3. Lancer la commande d’écriture pour transférer le contenu du RIM dans la mémoire.
+
+### Structure d’un boîtier
+
+Un boîtier possède la même structure qu’une mémoire (RAM, RIM, etc.), en plus de la commande CS.
+- CS=0 : Le boîtier est sélectionné.
+- CS=1 : Le boîtier n’est pas sélectionné.
+
+### Comment calculer le nombre de boîtiers
+
+- Soit M une mémoire de capacité C, tel que m est le nombre de mots et n la taille d’un mot.
+- Soit M’ un boîtier de capacité C’, tel que m’ est le nombre de mots et n’ la taille d’un mot.
+- Avec C > C’ (m >= m’, n >= n’).
+
+Pour connaître le nombre de boîtiers nécessaires, il faut calculer les deux facteurs suivants :
+- P = m/m’
+- Q = n/n’
+
+- P : Permet de déterminer le nombre de boîtiers M’ nécessaires pour obtenir le nombre de mots de la mémoire M (extension lignes).
+- Q : Permet de déterminer le nombre de boîtiers M’ nécessaires pour obtenir la taille de mot de la mémoire M (extension mots ou extension colonnes).
+
+- P.Q donne le nombre total de boîtiers nécessaires pour réaliser la mémoire M.
+- Pour sélectionner les boîtiers, on utilise les bits de poids forts d’adresses. Si P est le facteur d’extension lignes, alors on prend k bits tel que P=2^k.
+- Les autres bits d’adresses restants sont utilisés pour sélectionner un mot dans un boîtier.
+
+### Mémoire modulaire
+
+- La solution est de découper la mémoire en plusieurs modules.
+- Plusieurs bus permettent d’accéder simultanément (en même temps) à la MC.
+- Il est possible d’avoir autant d’accès que de modules.
+- On ne peut pas accéder simultanément à un module.
+
+### Comment sélectionner un mot dans une architecture modulaire
+
+- L’adresse est divisée en deux parties :
+  - Les bits de poids forts pour sélectionner un module. Si le nombre de modules est égal à n, alors il faut prendre k bits tel que 2^k >= n.
+  - Les bits de poids faibles pour sélectionner un mot dans un module.
+"""
