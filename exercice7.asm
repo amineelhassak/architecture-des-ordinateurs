@@ -1,20 +1,27 @@
-assume ds:data
-main:
-    call affichage_alpha 
-    mov ax, 4ch
+data segment
+    a db 1
+    b db 5
+data ends
+
+code segment
+start:
+
+    mov ax,data
+    mov ds,ax
+    mov al,a
+    mov cl,b
+    mov dl,0
+fois:
+    add dl,al
+    loop fois ;
+    add dl,48
+    
+    mov ah,2
     int 21h
-affichage_alpha proc
-    mov ah, 02h
-    mov dl,'a'
-    boucle :
-        int 21h
-        inc dl
-        cmp dl,'z'
-        jle boucle
-        ret
-affichage_alpha endp
+
+mov ah, 4ch
+int 21h  
+
 ends
-end main
 
-
-; ////////////////////////////// correge
+end start
