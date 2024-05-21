@@ -22,14 +22,14 @@ Introduction ::: <br/>
 Avec une bascule c’est possible de mémoriser une information sur 1 seul bit.<br/>
 Avec un registre de n bascules c’est possible de mémoriser une information sur n bits.<br/>
 Si on veut mémoriser une information de taille importante —> il faut utiliser une mémoire.<br/>
-### Architecture matérielle d’une machine (architecture de Von Neumann )###
+### Architecture matérielle d’une machine (architecture de Von Neumann) ###
 L’architecture de Von Neumann (Cette architecture est la base des architectures des ordinateurs) est composée :<br/>
-D’une mémoire centrale<br/>
-D’une unité centrale (UC) ou CPU (Central Processing Unit), processeur.<br/>
+- D’une mémoire centrale<br/>
+- D’une unité centrale (UC) ou CPU (Central Processing Unit), processeur.<br/>
 
 <img width="535" alt="Screenshot 2024-05-19 at 5 42 07 PM" src="https://github.com/amineelhassak/architecture-des-ordinateurs/assets/123774795/751e52e6-7815-4f02-ba9e-621b6ae409c3"><br/>
 Unité centrale (processeur):<br/>
-à pour rôle d’exécuter les programmes.<br/>
+- a pour rôle d’exécuter les programmes.<br/>
 Pour pouvoir effectuer les opérations sur des données et exécuter des programmes, l’UC doit disposer d’un espace de travail. Cet espace de travail s’appelle la mémoire centrale.<br/>
 
 C’est quoi une mémoire ?<br/>
@@ -41,7 +41,7 @@ Une mémoire est un dispositif capable de :<br/>
 ####### Caractéristiques des mémoires #######
 1. La capacité d’une mémoire<br/>
 La capacité (taille) d’une mémoire est le nombre (quantité) d’informations qu’on peut enregistrer (mémoriser) dans cette mémoire.
-Bit(0,1) ---> 1 Octet = 8 bits —> 1 (KO) = 1024 octets —> 1 (MO) = 1024 KO —> 1 (GO) = 1024 MO —> 1 (To) = 1024 GO
+Bit (0,1) ---> 1 Octet = 8 bits —> 1 (KO) = 1024 octets —> 1 (MO) = 1024 KO —> 1 (GO) = 1024 MO —> 1 (To) = 1024 GO
 2. La volatilite
 ### La Mémoire Volatile et Non-Volatile ###
 | Caractéristique                        | Mémoire Volatile               | Mémoire Non-Volatile                      |
@@ -67,16 +67,9 @@ Les mémoires peuvent être classées en trois catégories selon la technologie 
 - Mémoire magnétique (disque dur, disquette,…) : moins rapide mais stocke un volume d’informations très grand.
 - Mémoire optique (DVD, CDROM,..)
 
-La mémoire centrale 
-RAM : Random Acces memory 
-Mémoire à accès aléatoire 
+## La mémoire centrale
 
-
-
-readme_content = """
-# README - Architecture des Ordinateurs
-
-## C'est quoi une mémoire centrale ?
+### C'est quoi une mémoire centrale ?
 
 La mémoire centrale (MC) représente l’espace de travail de l’ordinateur. Pour exécuter un programme sur une machine (ordinateur/calculateur), il faut le charger (copier) dans la mémoire centrale. Le temps d’accès à la mémoire centrale et sa capacité sont deux éléments qui influent sur le temps d’exécution d’un programme, impactant ainsi la performance de la machine.
 
@@ -105,6 +98,8 @@ Il existe deux grandes familles de mémoires centrales : les mémoires statiques
 - Les adresses sont séquentielles (consécutives).
 - La taille de l’adresse (le nombre de bits) dépend de la capacité de la mémoire.
 
+<img width="307" alt="Screenshot 2024-05-19 at 7 53 56 PM" src="https://github.com/amineelhassak/architecture-des-ordinateurs/assets/123774795/46673dbb-3b37-487a-93be-4d8a6c01fe08"><br/>
+
 ### Structure physique d’une mémoire centrale
 
 - **RAM (Registre d’Adresse Mémoire)**: Ce registre stocke l’adresse du mot à lire ou à écrire.
@@ -113,6 +108,8 @@ Il existe deux grandes familles de mémoires centrales : les mémoires statiques
 - **R/W**: Commande de lecture/écriture. Cette commande permet de lire ou d’écrire dans la mémoire (si R/W=1 alors lecture sinon écriture).
 - **Bus d’adresses**: Taille k bits.
 - **Bus de données**: Taille n bits.
+
+<img width="341" alt="Screenshot 2024-05-21 at 12 41 05 PM" src="https://github.com/amineelhassak/architecture-des-ordinateurs/assets/123774795/02a34a83-5426-4b85-9c56-b76fa59a49d0"><br/>
 
 ### Capacité de la mémoire centrale
 
