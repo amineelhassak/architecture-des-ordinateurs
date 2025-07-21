@@ -109,7 +109,7 @@ Projet éducatif pour l'apprentissage de l'architecture des ordinateurs.
 [![GitHub forks](https://img.shields.io/github/forks/yourusername/architecture-des-ordinateurs?style=social)](https://github.com/yourusername/architecture-des-ordinateurs/network)
 [![GitHub issues](https://img.shields.io/github/issues/yourusername/architecture-des-ordinateurs)](https://github.com/yourusername/architecture-des-ordinateurs/issues)
 
-**Auteur** : [Votre Nom]
+**Auteur** : amine el hassak
 **Dernière mise à jour** : Juin 2024
 
 </div>
